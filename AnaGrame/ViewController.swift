@@ -34,11 +34,12 @@ class ViewController: UITableViewController {
         ac.addTextField()
         
         let submitAction = UIAlertAction(title: "Submit", style: .default) { [weak self, weak ac] _ in
+            guard let self = self else { return }
             guard let answer = ac?.textFields?[0].text else { return }
             
-            self?.gameLogic.submit(answer) {
+            self.gameLogic.submit(answer, view: self) {
                 let indexPath = IndexPath(row: 0, section: 0)
-                self?.tableView.insertRows(at: [indexPath], with: .automatic)
+                self.tableView.insertRows(at: [indexPath], with: .automatic)
             }
         }
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))

@@ -13,6 +13,8 @@
 		BF63C05C268B04F6002B02CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF63C05A268B04F6002B02CC /* Main.storyboard */; };
 		BF63C05E268B04F9002B02CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF63C05D268B04F9002B02CC /* Assets.xcassets */; };
 		BF63C061268B04F9002B02CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF63C05F268B04F9002B02CC /* LaunchScreen.storyboard */; };
+		BF63C069268B1A3F002B02CC /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF63C068268B1A3F002B02CC /* start.txt */; };
+		BF63C06B268DCE4A002B02CC /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63C06A268DCE49002B02CC /* GameLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BF63C05D268B04F9002B02CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF63C060268B04F9002B02CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF63C062268B04F9002B02CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF63C068268B1A3F002B02CC /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		BF63C06A268DCE49002B02CC /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				BF63C054268B04F6002B02CC /* AppDelegate.swift */,
 				BF63C056268B04F6002B02CC /* SceneDelegate.swift */,
 				BF63C058268B04F6002B02CC /* ViewController.swift */,
+				BF63C06A268DCE49002B02CC /* GameLogic.swift */,
 				BF63C05A268B04F6002B02CC /* Main.storyboard */,
+				BF63C068268B1A3F002B02CC /* start.txt */,
 				BF63C05D268B04F9002B02CC /* Assets.xcassets */,
 				BF63C05F268B04F9002B02CC /* LaunchScreen.storyboard */,
 				BF63C062268B04F9002B02CC /* Info.plist */,
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF63C061268B04F9002B02CC /* LaunchScreen.storyboard in Resources */,
+				BF63C069268B1A3F002B02CC /* start.txt in Resources */,
 				BF63C05E268B04F9002B02CC /* Assets.xcassets in Resources */,
 				BF63C05C268B04F6002B02CC /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			files = (
 				BF63C059268B04F6002B02CC /* ViewController.swift in Sources */,
 				BF63C055268B04F6002B02CC /* AppDelegate.swift in Sources */,
+				BF63C06B268DCE4A002B02CC /* GameLogic.swift in Sources */,
 				BF63C057268B04F6002B02CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

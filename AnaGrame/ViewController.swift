@@ -12,16 +12,19 @@ class ViewController: UITableViewController {
     private let gameLogic = GameLogic()
     
     lazy var addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptForAnswer))
-
+    lazy var restartButton = UIBarButtonItem(barButtonSystemItem: .redo, target: self, action: #selector(startGame))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = addButton
+        navigationItem.leftBarButtonItem = restartButton
+        
         gameLogic.getAllWords()
         
         startGame()
     }
     
-    private func startGame() {
+    @objc private func startGame() {
         title = gameLogic.getCurrentWord()
         gameLogic.currentWord = title ?? "Unknowned title"
         gameLogic.usedWords.removeAll(keepingCapacity: true)
@@ -39,14 +42,13 @@ class ViewController: UITableViewController {
             
             self.gameLogic.submit(answer, view: self) {
                 let indexPath = IndexPath(row: 0, section: 0)
-                self.tableView.insertRows(at: [indexPath], with: .automatic)
+                self.tableView.insertRows(at: [indexPath], with: .automatic) //automatic decide animation
             }
         }
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         ac.addAction(submitAction)
         present(ac, animated: true, completion: nil)
     }
-    
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

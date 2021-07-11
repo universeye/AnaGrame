@@ -15,6 +15,7 @@
 		BF63C061268B04F9002B02CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF63C05F268B04F9002B02CC /* LaunchScreen.storyboard */; };
 		BF63C069268B1A3F002B02CC /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF63C068268B1A3F002B02CC /* start.txt */; };
 		BF63C06B268DCE4A002B02CC /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63C06A268DCE49002B02CC /* GameLogic.swift */; };
+		BFF6DB81269B64EA00960055 /* AGALERT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DB80269B64EA00960055 /* AGALERT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BF63C062268B04F9002B02CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF63C068268B1A3F002B02CC /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		BF63C06A268DCE49002B02CC /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		BFF6DB80269B64EA00960055 /* AGALERT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGALERT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				BF63C056268B04F6002B02CC /* SceneDelegate.swift */,
 				BF63C058268B04F6002B02CC /* ViewController.swift */,
 				BF63C06A268DCE49002B02CC /* GameLogic.swift */,
+				BFF6DB80269B64EA00960055 /* AGALERT.swift */,
 				BF63C05A268B04F6002B02CC /* Main.storyboard */,
 				BF63C068268B1A3F002B02CC /* start.txt */,
 				BF63C05D268B04F9002B02CC /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF63C059268B04F6002B02CC /* ViewController.swift in Sources */,
+				BFF6DB81269B64EA00960055 /* AGALERT.swift in Sources */,
 				BF63C055268B04F6002B02CC /* AppDelegate.swift in Sources */,
 				BF63C06B268DCE4A002B02CC /* GameLogic.swift in Sources */,
 				BF63C057268B04F6002B02CC /* SceneDelegate.swift in Sources */,
